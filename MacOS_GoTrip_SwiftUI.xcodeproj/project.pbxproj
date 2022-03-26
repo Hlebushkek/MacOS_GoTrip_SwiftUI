@@ -7,23 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1C438527EF6DA50058307D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BC1C438427EF6DA50058307D /* Realm */; };
+		BC1C438727EF6DA50058307D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BC1C438627EF6DA50058307D /* RealmSwift */; };
 		BC7572BA27EF3B1A00344D07 /* MacOS_GoTrip_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7572B927EF3B1A00344D07 /* MacOS_GoTrip_SwiftUIApp.swift */; };
-		BC7572BC27EF3B1A00344D07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7572BB27EF3B1A00344D07 /* ContentView.swift */; };
 		BC7572BE27EF3B1C00344D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7572BD27EF3B1C00344D07 /* Assets.xcassets */; };
 		BC7572C127EF3B1C00344D07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7572C027EF3B1C00344D07 /* Preview Assets.xcassets */; };
+		BC7572CF27EF3B3200344D07 /* IOS_GoTrip_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7572CE27EF3B3200344D07 /* IOS_GoTrip_SwiftUIApp.swift */; };
+		BC7572D127EF3B3200344D07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7572D027EF3B3200344D07 /* ContentView.swift */; };
+		BC7572D327EF3B3400344D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7572D227EF3B3400344D07 /* Assets.xcassets */; };
+		BC7572D627EF3B3400344D07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7572D527EF3B3400344D07 /* Preview Assets.xcassets */; };
+		BC7572DB27EF3C1000344D07 /* TripDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7572DA27EF3C1000344D07 /* TripDetailedView.swift */; };
+		BC7572DD27EF3DDB00344D07 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7572DC27EF3DDB00344D07 /* CircleImage.swift */; };
+		BC7572DF27EF525000344D07 /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7572DE27EF525000344D07 /* TripListView.swift */; };
+		BC7572E127EF68B600344D07 /* RealmModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7572E027EF68B600344D07 /* RealmModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC7572B627EF3B1A00344D07 /* MacOS_GoTrip_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOS_GoTrip_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7572B927EF3B1A00344D07 /* MacOS_GoTrip_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOS_GoTrip_SwiftUIApp.swift; sourceTree = "<group>"; };
-		BC7572BB27EF3B1A00344D07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC7572BD27EF3B1C00344D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC7572C027EF3B1C00344D07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC7572C227EF3B1C00344D07 /* MacOS_GoTrip_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOS_GoTrip_SwiftUI.entitlements; sourceTree = "<group>"; };
+		BC7572CC27EF3B3200344D07 /* IOS_GoTrip_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_GoTrip_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7572CE27EF3B3200344D07 /* IOS_GoTrip_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_GoTrip_SwiftUIApp.swift; sourceTree = "<group>"; };
+		BC7572D027EF3B3200344D07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC7572D227EF3B3400344D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC7572D527EF3B3400344D07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC7572DA27EF3C1000344D07 /* TripDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailedView.swift; sourceTree = "<group>"; };
+		BC7572DC27EF3DDB00344D07 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		BC7572DE27EF525000344D07 /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
+		BC7572E027EF68B600344D07 /* RealmModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BC7572B327EF3B1A00344D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1C438727EF6DA50058307D /* RealmSwift in Frameworks */,
+				BC1C438527EF6DA50058307D /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7572C927EF3B3200344D07 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7572B827EF3B1A00344D07 /* MacOS_GoTrip_SwiftUI */,
+				BC7572CD27EF3B3200344D07 /* IOS_GoTrip_SwiftUI */,
 				BC7572B727EF3B1A00344D07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7572B627EF3B1A00344D07 /* MacOS_GoTrip_SwiftUI.app */,
+				BC7572CC27EF3B3200344D07 /* IOS_GoTrip_SwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,7 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				BC7572B927EF3B1A00344D07 /* MacOS_GoTrip_SwiftUIApp.swift */,
-				BC7572BB27EF3B1A00344D07 /* ContentView.swift */,
+				BC7572DE27EF525000344D07 /* TripListView.swift */,
+				BC7572E027EF68B600344D07 /* RealmModels.swift */,
+				BC7572DA27EF3C1000344D07 /* TripDetailedView.swift */,
+				BC7572DC27EF3DDB00344D07 /* CircleImage.swift */,
 				BC7572BD27EF3B1C00344D07 /* Assets.xcassets */,
 				BC7572C227EF3B1C00344D07 /* MacOS_GoTrip_SwiftUI.entitlements */,
 				BC7572BF27EF3B1C00344D07 /* Preview Content */,
@@ -65,6 +96,25 @@
 			isa = PBXGroup;
 			children = (
 				BC7572C027EF3B1C00344D07 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC7572CD27EF3B3200344D07 /* IOS_GoTrip_SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				BC7572CE27EF3B3200344D07 /* IOS_GoTrip_SwiftUIApp.swift */,
+				BC7572D027EF3B3200344D07 /* ContentView.swift */,
+				BC7572D227EF3B3400344D07 /* Assets.xcassets */,
+				BC7572D427EF3B3400344D07 /* Preview Content */,
+			);
+			path = IOS_GoTrip_SwiftUI;
+			sourceTree = "<group>";
+		};
+		BC7572D427EF3B3400344D07 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BC7572D527EF3B3400344D07 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -85,8 +135,29 @@
 			dependencies = (
 			);
 			name = MacOS_GoTrip_SwiftUI;
+			packageProductDependencies = (
+				BC1C438427EF6DA50058307D /* Realm */,
+				BC1C438627EF6DA50058307D /* RealmSwift */,
+			);
 			productName = MacOS_GoTrip_SwiftUI;
 			productReference = BC7572B627EF3B1A00344D07 /* MacOS_GoTrip_SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC7572CB27EF3B3200344D07 /* IOS_GoTrip_SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7572D727EF3B3400344D07 /* Build configuration list for PBXNativeTarget "IOS_GoTrip_SwiftUI" */;
+			buildPhases = (
+				BC7572C827EF3B3200344D07 /* Sources */,
+				BC7572C927EF3B3200344D07 /* Frameworks */,
+				BC7572CA27EF3B3200344D07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOS_GoTrip_SwiftUI;
+			productName = IOS_GoTrip_SwiftUI;
+			productReference = BC7572CC27EF3B3200344D07 /* IOS_GoTrip_SwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,6 +173,9 @@
 					BC7572B527EF3B1A00344D07 = {
 						CreatedOnToolsVersion = 13.3;
 					};
+					BC7572CB27EF3B3200344D07 = {
+						CreatedOnToolsVersion = 13.3;
+					};
 				};
 			};
 			buildConfigurationList = BC7572B127EF3B1A00344D07 /* Build configuration list for PBXProject "MacOS_GoTrip_SwiftUI" */;
@@ -113,11 +187,15 @@
 				Base,
 			);
 			mainGroup = BC7572AD27EF3B1A00344D07;
+			packageReferences = (
+				BC1C438327EF6DA50058307D /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = BC7572B727EF3B1A00344D07 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BC7572B527EF3B1A00344D07 /* MacOS_GoTrip_SwiftUI */,
+				BC7572CB27EF3B3200344D07 /* IOS_GoTrip_SwiftUI */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +210,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC7572CA27EF3B3200344D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7572D627EF3B3400344D07 /* Preview Assets.xcassets in Resources */,
+				BC7572D327EF3B3400344D07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,8 +226,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7572BC27EF3B1A00344D07 /* ContentView.swift in Sources */,
+				BC7572DD27EF3DDB00344D07 /* CircleImage.swift in Sources */,
+				BC7572DB27EF3C1000344D07 /* TripDetailedView.swift in Sources */,
+				BC7572DF27EF525000344D07 /* TripListView.swift in Sources */,
 				BC7572BA27EF3B1A00344D07 /* MacOS_GoTrip_SwiftUIApp.swift in Sources */,
+				BC7572E127EF68B600344D07 /* RealmModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7572C827EF3B3200344D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7572D127EF3B3200344D07 /* ContentView.swift in Sources */,
+				BC7572CF27EF3B3200344D07 /* IOS_GoTrip_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +413,69 @@
 			};
 			name = Release;
 		};
+		BC7572D827EF3B3400344D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IOS_GoTrip_SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 38M6285G4U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hlebushek.IOS-GoTrip-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC7572D927EF3B3400344D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IOS_GoTrip_SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 38M6285G4U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hlebushek.IOS-GoTrip-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,7 +497,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		BC7572D727EF3B3400344D07 /* Build configuration list for PBXNativeTarget "IOS_GoTrip_SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC7572D827EF3B3400344D07 /* Debug */,
+				BC7572D927EF3B3400344D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC1C438327EF6DA50058307D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC1C438427EF6DA50058307D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC1C438327EF6DA50058307D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		BC1C438627EF6DA50058307D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC1C438327EF6DA50058307D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC7572AE27EF3B1A00344D07 /* Project object */;
 }
