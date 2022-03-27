@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class TripInfoModel: Object {
+class TripInfoModel: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var ownerID: String = ""
     @Persisted var placeFrom: String = ""
@@ -18,7 +18,7 @@ class TripInfoModel: Object {
     @Persisted var dateAdded: String = ""
 }
 
-class TripPriceModel: Object {
+class TripPriceModel: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted private var integerPart = 0
     @Persisted private var fractionalPart = 0

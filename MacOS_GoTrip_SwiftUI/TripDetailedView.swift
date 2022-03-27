@@ -49,32 +49,49 @@ struct TripDetailedView: View {
             .frame(height: 300)
 
             HStack {
-                CircleImage(imgName: "Torronto")
+                CircleImage(imgName: "Vancouver")
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 240)
                 
                 Spacer()
                 
-                CircleImage(imgName: "Torronto")
+                CircleImage(imgName: "Vancouver")
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 240)
             }
-            .offset(y: -80)
+            .offset(y: -40)
             
 
             VStack(alignment: .leading) {
                 HStack {
-                    Text("landmark.name")
-                        .font(.title)
-                }
-
-                HStack {
-                    Text("landmark.park")
+                    VStack {
+                        Text("landmark.name")
+                            .font(.title)
+                        
+                        HStack {
+                            Text("landmark.park")
+                            Text("landmark.state")
+                        }
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                    }
+                    
                     Spacer()
-                    Text("landmark.state")
+                    
+                    VStack {
+                        HStack {
+                            Text("landmark.name")
+                                .font(.title)
+                        }
+
+                        HStack {
+                            Text("landmark.park")
+                            Text("landmark.state")
+                        }
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                    }
                 }
-                .font(.subheadline)
-                .foregroundColor(.secondary)
 
                 Divider()
 

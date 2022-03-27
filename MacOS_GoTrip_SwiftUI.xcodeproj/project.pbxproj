@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC1C438527EF6DA50058307D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BC1C438427EF6DA50058307D /* Realm */; };
 		BC1C438727EF6DA50058307D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BC1C438627EF6DA50058307D /* RealmSwift */; };
+		BC5C504827F1004E0085652C /* GoTripMacCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5C504727F1004E0085652C /* GoTripMacCommands.swift */; };
 		BC7572BA27EF3B1A00344D07 /* MacOS_GoTrip_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7572B927EF3B1A00344D07 /* MacOS_GoTrip_SwiftUIApp.swift */; };
 		BC7572BE27EF3B1C00344D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7572BD27EF3B1C00344D07 /* Assets.xcassets */; };
 		BC7572C127EF3B1C00344D07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7572C027EF3B1C00344D07 /* Preview Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC5C504727F1004E0085652C /* GoTripMacCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTripMacCommands.swift; sourceTree = "<group>"; };
 		BC7572B627EF3B1A00344D07 /* MacOS_GoTrip_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOS_GoTrip_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7572B927EF3B1A00344D07 /* MacOS_GoTrip_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOS_GoTrip_SwiftUIApp.swift; sourceTree = "<group>"; };
 		BC7572BD27EF3B1C00344D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		BC7572AD27EF3B1A00344D07 = {
 			isa = PBXGroup;
 			children = (
+				BC5C504727F1004E0085652C /* GoTripMacCommands.swift */,
 				BC7572B827EF3B1A00344D07 /* MacOS_GoTrip_SwiftUI */,
 				BC7572CD27EF3B3200344D07 /* IOS_GoTrip_SwiftUI */,
 				BC7572B727EF3B1A00344D07 /* Products */,
@@ -230,6 +233,7 @@
 				BC7572DB27EF3C1000344D07 /* TripDetailedView.swift in Sources */,
 				BC7572DF27EF525000344D07 /* TripListView.swift in Sources */,
 				BC7572BA27EF3B1A00344D07 /* MacOS_GoTrip_SwiftUIApp.swift in Sources */,
+				BC5C504827F1004E0085652C /* GoTripMacCommands.swift in Sources */,
 				BC7572E127EF68B600344D07 /* RealmModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
