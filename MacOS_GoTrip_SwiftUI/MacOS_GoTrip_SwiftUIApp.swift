@@ -16,18 +16,11 @@ struct MacOS_GoTrip_SwiftUIApp: SwiftUI.App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                
-                if let app = app {
-                    SyncContentView(app: app)
-                } else {
-                    Text("Local")
-                }
-                
-                TripDetailedView(TripModel(
-                    City(name: "Vancouver", coordinate: CLLocationCoordinate2D(latitude: 49.260413, longitude: -123.113946)),
-                    City(name: "Torronto", coordinate: CLLocationCoordinate2D(latitude: 43.651605, longitude: -79.383125))
-                ))
+            if let app = app {
+                SyncContentView(app: app)
+                    .frame(minWidth: 800, minHeight: 600)
+            } else {
+                Text("Local")
             }
         }.commands { GoTripMacCommands() }
     }

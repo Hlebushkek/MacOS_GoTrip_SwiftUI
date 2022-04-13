@@ -7,29 +7,67 @@
 
 import SwiftUI
 import RealmSwift
+import MapKit
 
 
 let app: RealmSwift.App? = RealmSwift.App(id: "gotripios-pxcep")
  
 struct TripListView: View {
     @EnvironmentObject var appState: AppState
-    @State var selectedID: String? = nil
+    @State private var selectedFilter: TripType?
+    @State private var showFavoritesOnly = false
     var trips: [TripInfoModel] = []
     
     var body: some View {
-        LogoutButton()
-        List {
-            ForEach(trips) { trip in
-                TripCell(trip: trip, selectedID: self.$selectedID)
+        NavigationView {
+            VStack {
+                
+                HStack {
+                    LogoutButton()
+                    Spacer()
+                    AddTripButton()
+                }.padding(.horizontal, 10)
+                
+                List {
+                    ForEach(trips) { trip in
+                        NavigationLink {
+                            TripDetailedView(trip)
+                        } label: {
+                            TripCell(trip: trip)
+                        }
+                        .tag(trip._id.stringValue)
+                    }
+                }
+                .frame(minWidth: 160)
+                .padding(.vertical, 4)
+                .toolbar {
+                    ToolbarItem {
+                        Menu {
+                            Picker("Sort by type", selection: $selectedFilter) {
+                                Text("Airplane")
+                                Text("Train")
+                                Text("Bus")
+                                Text("Car")
+                            }
+                            .pickerStyle(.inline)
+                            
+                            Toggle(isOn: $showFavoritesOnly) {
+                                Label("Favorites only", systemImage: "star.fill")
+                            }
+                        } label: {
+                            Label("Filter", systemImage: "slider.horizontal.3")
+                        }
+                    }
+                }
             }
+            
+            Text("Select trip")
         }
-        .padding(.vertical, 4)
     }
 }
 
 struct TripCell: View {
     var trip: TripInfoModel
-    @Binding var selectedID: String?
     
     var body: some View {
         HStack {
@@ -55,16 +93,9 @@ struct TripCell: View {
                     .padding(.trailing, 4)
                     .imageScale(.medium)
                     .foregroundColor(.yellow)
-                    
             }
         }
-        .background(selectedID == trip._id.stringValue ? .blue : .clear)
-        .contentShape(Rectangle())
         .cornerRadius(5)
-        .padding(.bottom, 10)
-        .onTapGesture {
-            self.selectedID = trip._id.stringValue
-        }
     }
 }
 
@@ -104,6 +135,9 @@ struct LoginView: View {
     @State var error: Error?
     @State var isLoggingIn = false
     
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
         VStack {
             if isLoggingIn {
@@ -112,7 +146,11 @@ struct LoginView: View {
             if let error = error {
                 Text("Error: \(error.localizedDescription)")
             }
-            Button("Log in anonymously") {
+            TextField("Email", text: $email)
+                .frame(width: 160, height: 20)
+            SecureField("Password", text: $password)
+                .frame(width: 160, height: 20)
+            Button("Log in") {
                 isLoggingIn = true
                 app!.login(credentials: .emailPassword(email: "volsoor@gmail.com", password: "hleb123")) { result in
                     isLoggingIn = false
@@ -142,7 +180,19 @@ struct LogoutButton: View {
             }
         }
         .disabled(app!.currentUser == nil || isLoggingOut)
-        .padding(.top, 8)
+    }
+}
+struct AddTripButton: View {
+    @State private var showingSheet = false
+    
+    var body: some View {
+        Button("Add trip") {
+            showingSheet.toggle()
+        }
+        .sheet(isPresented: $showingSheet) {
+            AddTripView()
+                .frame(minWidth: 200, minHeight: 200)
+        }
     }
 }
 

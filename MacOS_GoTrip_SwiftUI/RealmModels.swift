@@ -25,7 +25,7 @@ class TripPriceModel: Object, ObjectKeyIdentifiable {
     @Persisted var currencyType: CurrencyType = .EUR
     
     override var description: String {
-        return "\(integerPart).\(fractionalPart)\(currencyType.rawValue)"
+        return "\(integerPart).\(fractionalPart)"
     }
     
     convenience init(_ value: Float) {

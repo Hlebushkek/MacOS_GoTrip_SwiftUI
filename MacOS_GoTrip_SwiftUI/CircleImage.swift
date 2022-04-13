@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CircleImage: View {
     let imgName: String
+    
     var body: some View {
         Image(imgName)
             .resizable(resizingMode: .stretch)

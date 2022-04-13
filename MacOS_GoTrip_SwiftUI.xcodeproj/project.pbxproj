@@ -21,6 +21,7 @@
 		BC7572DD27EF3DDB00344D07 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7572DC27EF3DDB00344D07 /* CircleImage.swift */; };
 		BC7572DF27EF525000344D07 /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7572DE27EF525000344D07 /* TripListView.swift */; };
 		BC7572E127EF68B600344D07 /* RealmModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7572E027EF68B600344D07 /* RealmModels.swift */; };
+		BCD6B2DF27F62F1300776472 /* AddTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6B2DE27F62F1300776472 /* AddTripView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		BC7572DC27EF3DDB00344D07 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BC7572DE27EF525000344D07 /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
 		BC7572E027EF68B600344D07 /* RealmModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModels.swift; sourceTree = "<group>"; };
+		BCD6B2DE27F62F1300776472 /* AddTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				BC7572B927EF3B1A00344D07 /* MacOS_GoTrip_SwiftUIApp.swift */,
 				BC7572DE27EF525000344D07 /* TripListView.swift */,
+				BCD6B2DE27F62F1300776472 /* AddTripView.swift */,
 				BC7572E027EF68B600344D07 /* RealmModels.swift */,
 				BC7572DA27EF3C1000344D07 /* TripDetailedView.swift */,
 				BC7572DC27EF3DDB00344D07 /* CircleImage.swift */,
@@ -232,6 +235,7 @@
 				BC7572DD27EF3DDB00344D07 /* CircleImage.swift in Sources */,
 				BC7572DB27EF3C1000344D07 /* TripDetailedView.swift in Sources */,
 				BC7572DF27EF525000344D07 /* TripListView.swift in Sources */,
+				BCD6B2DF27F62F1300776472 /* AddTripView.swift in Sources */,
 				BC7572BA27EF3B1A00344D07 /* MacOS_GoTrip_SwiftUIApp.swift in Sources */,
 				BC5C504827F1004E0085652C /* GoTripMacCommands.swift in Sources */,
 				BC7572E127EF68B600344D07 /* RealmModels.swift in Sources */,

@@ -16,6 +16,7 @@ struct City: Identifiable {
 }
 
 class TripModel: ObservableObject {
+    
     @Published var region: MKCoordinateRegion
     let c1: City
     let c2: City
@@ -31,14 +32,21 @@ class TripModel: ObservableObject {
 struct TripDetailedView: View {
     
     @ObservedObject var tripModel: TripModel
+    @ObservedObject var trip: TripInfoModel
+    
     var annotations: [City] = []
     
-    init(_ tripModel: TripModel) {
-        self.tripModel = tripModel
-        
+    init(_ trip: TripInfoModel) {
+        self.trip = trip
+        self.tripModel = TripModel(
+            City(name: "Vancouver", coordinate: CLLocationCoordinate2D(latitude: 49.260413, longitude: -123.113946)),
+            City(name: "Torronto", coordinate: CLLocationCoordinate2D(latitude: 43.651605, longitude: -79.383125)))
         annotations.append(tripModel.c1)
         annotations.append(tripModel.c2)
     }
+    
+    let img1 = CircleImage(imgName: "Vancouver")
+    let img2 = CircleImage(imgName: "Vancouver")
 
     var body: some View {
         ScrollView {
@@ -47,30 +55,35 @@ struct TripDetailedView: View {
             }
             .ignoresSafeArea(edges: .top)
             .frame(height: 300)
+            
+            GeometryReader { geo in
+                Line(start: CGPoint(x: 120, y: 0), end: CGPoint(x: geo.size.width - 120, y: 0))
+                    .stroke(.white, lineWidth: 20)
+            }
 
             HStack {
-                CircleImage(imgName: "Vancouver")
+                img1
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 240)
                 
                 Spacer()
                 
-                CircleImage(imgName: "Vancouver")
+                img2
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 240)
             }
             .offset(y: -40)
-            
+            .padding(.horizontal, 20)
 
             VStack(alignment: .leading) {
                 HStack {
                     VStack {
-                        Text("landmark.name")
+                        Text(trip.placeFrom)
                             .font(.title)
                         
                         HStack {
-                            Text("landmark.park")
-                            Text("landmark.state")
+                            Text(trip.placeFrom)
+                            Text(trip.placeFrom)
                         }
                         .font(.subheadline)
                         .foregroundColor(.secondary)
@@ -80,13 +93,13 @@ struct TripDetailedView: View {
                     
                     VStack {
                         HStack {
-                            Text("landmark.name")
+                            Text(trip.placeTo)
                                 .font(.title)
                         }
 
                         HStack {
-                            Text("landmark.park")
-                            Text("landmark.state")
+                            Text(trip.placeTo)
+                            Text(trip.placeTo)
                         }
                         .font(.subheadline)
                         .foregroundColor(.secondary)
@@ -101,15 +114,23 @@ struct TripDetailedView: View {
             }
             .padding()
         }
-        .navigationTitle("title123")
+        .navigationTitle("Trip Detailed")
+    }
+}
+
+struct Line: Shape {
+    var start, end: CGPoint
+
+    func path(in rect: CGRect) -> Path {
+        Path { p in
+            p.move(to: start)
+            p.addLine(to: end)
+        }
     }
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        TripDetailedView(TripModel(
-            City(name: "Vancouver", coordinate: CLLocationCoordinate2D(latitude: 49.260413, longitude: -123.113946)),
-            City(name: "Torronto", coordinate: CLLocationCoordinate2D(latitude: 43.651605, longitude: -79.383125))
-        ))
+        TripDetailedView(TripInfoModel())
     }
 }
